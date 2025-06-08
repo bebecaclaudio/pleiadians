@@ -14,26 +14,27 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
   <style>
-    body {
+     body {
       font-family: 'Inter', sans-serif;
       background-color: #0A0F1C;
       color: #E0E0F0;
+      margin: 0;
+      padding: 0;
     }
-
+    
     .accent {
       color: #FFD700;
     }
-
+    
     .primary {
       color: #2D4B7A;
     }
-
+    
     .text-muted {
       color: #A0A0C0;
     }
-
+    
     .btn-main {
       background-color: #2D4B7A;
       color: white;
@@ -43,13 +44,16 @@
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      user-select: none;
     }
-
+    
     .btn-main:hover {
       background-color: #1E3359;
+      box-shadow: 0 0 12px #2D4B7A88;
     }
-
+    
     .btn-outline {
       border: 2px solid #FFD700;
       color: #FFD700;
@@ -60,14 +64,17 @@
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      transition: all 0.3s ease;
+      transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      user-select: none;
     }
-
+    
     .btn-outline:hover {
       background-color: #FFD700;
       color: #0A0F1C;
+      box-shadow: 0 0 16px #FFD700cc;
     }
-
+    
     .btn-social {
       padding: 0.75rem 1.25rem;
       border-radius: 8px;
@@ -75,12 +82,21 @@
       align-items: center;
       gap: 0.5rem;
       font-weight: 600;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      user-select: none;
     }
-
+    
+    .btn-social:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 12px currentColor;
+    }
+    
+    /* Cores específicas para cada rede social */
     .btn-instagram { background-color: #C13584; color: white; }
     .btn-youtube { background-color: #FF0000; color: white; }
     .btn-reddit { background-color: #FF4500; color: white; }
-    .btn-x, .btn-threads { background-color: #000; color: white; }
+    .btn-x, .btn-threads { background-color: #000000; color: white; }
   </style>
 </head>
 <body class="leading-relaxed tracking-wide">
@@ -175,33 +191,28 @@
   <!-- Redes Sociais -->
  <section class="bg-black text-white px-4 py-8">
   <div class="max-w-7xl mx-auto text-center">
-    <h2 class="text-xl font-semibold mb-4">Nos encontre nas redes:</h2>
-    <div class="flex justify-center space-x-6 text-3xl">
-      <!-- YouTube -->
-      <a href="https://youtube.com/@fragmentosdesofia" target="_blank" aria-label="YouTube" class="hover:scale-110 transition-transform" style="color: #FF0000;">
+    <h2 class="text-xl font-semibold mb-6">Nos encontre nas redes:</h2>
+    <div class="social-buttons">
+      <a href="https://instagram.com/pleiadianstecandhuman" target="_blank" aria-label="Instagram" class="social-button" rel="noopener noreferrer" style="background-color: #D4AF37; color: black;">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://youtube.com/@fragmentosdesofia" target="_blank" aria-label="YouTube" class="social-button" rel="noopener noreferrer">
         <i class="fab fa-youtube"></i>
       </a>
-
-      <!-- X (Twitter) -->
-      <a href="https://x.com/elosdesofia" target="_blank" aria-label="X (Twitter)" class="hover:scale-110 transition-transform" style="color: #1DA1F2;">
-        <i class="fab fa-twitter"></i>
+      <a href="https://x.com/elosdesofia" target="_blank" aria-label="X (Twitter)" class="social-button" rel="noopener noreferrer">
+        <i class="fab fa-x-twitter"></i>
       </a>
-
-      <!-- Reddit -->
-      <a href="https://reddit.com/r/fragmentosdesofia" target="_blank" aria-label="Reddit" class="hover:scale-110 transition-transform" style="color: #FF4500;">
+      <a href="https://reddit.com/r/fragmentosdesofia" target="_blank" aria-label="Reddit" class="social-button" rel="noopener noreferrer">
         <i class="fab fa-reddit"></i>
       </a>
-
-      <!-- Threads -->
-      <a href="https://www.threads.net/@pleiadianstecandhuman" target="_blank" aria-label="Threads" class="hover:scale-110 transition-transform" style="color: #833AB4;">
+      <a href="https://www.threads.net/@pleiadiansandhuman" target="_blank" aria-label="Threads" class="social-button" rel="noopener noreferrer">
         <i class="fa-brands fa-threads"></i>
       </a>
     </div>
   </div>
 </section>
-  
-<!-- Rodapé ♥ -->
-<footer class="bg-gray-900 text-gray-400 text-center py-4 mt-8">
+
+<footer class="bg-gray-900 text-gray-400 text-center py-4 mt-12">
   <p>© 2025 Sua Marca. Todos os direitos reservados.</p>
 </footer>
   
