@@ -6,11 +6,11 @@
   <meta name="description" content="Pleiadians – O Elo que Une Sabedoria. Consultoria filosófica com Sofia Rebeca."/>
   <title>Pleiadians – O Elo que Une Sabedoria</title>
 
-  <!-- Tailwind CSS CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"  rel="stylesheet"/>
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
 
   <!-- Font Awesome Icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #0A0F1C; 
+      background-color: #0A0F1C;
       color: #E0E0F0;
     }
 
@@ -34,11 +34,9 @@
       color: #A0A0C0;
     }
 
-    /* Botões principais */
     .btn-main {
       background-color: #2D4B7A;
       color: white;
-      border: none;
       padding: 1rem 1.5rem;
       border-radius: 12px;
       font-weight: 600;
@@ -70,31 +68,19 @@
       color: #0A0F1C;
     }
 
-    /* Botões de redes sociais */
-    .btn-instagram {
-      background-color: #C13584;
-      color: white;
+    .btn-social {
+      padding: 0.75rem 1.25rem;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
     }
 
-    .btn-youtube {
-      background-color: #FF0000;
-      color: white;
-    }
-
-    .btn-reddit {
-      background-color: #FF4500;
-      color: white;
-    }
-
-    .btn-x {
-      background-color: #000000;
-      color: white;
-    }
-
-    .btn-threads {
-      background-color: #000000;
-      color: white;
-    }
+    .btn-instagram { background-color: #C13584; color: white; }
+    .btn-youtube { background-color: #FF0000; color: white; }
+    .btn-reddit { background-color: #FF4500; color: white; }
+    .btn-x, .btn-threads { background-color: #000; color: white; }
   </style>
 </head>
 <body class="leading-relaxed tracking-wide">
@@ -102,9 +88,7 @@
   <!-- Header -->
   <header class="py-12 text-center">
     <img src="assets/imgs/Pleiadians-removebg-preview.png" alt="Logo Pleiadians" class="mx-auto mb-12 h-20 object-contain" />
-    <h1 class="text-4xl md:text-5xl font-bold leading-tight max-w-3xl mx-auto accent">
-      O Elo que Une Sabedoria
-    </h1>
+    <h1 class="text-4xl md:text-5xl font-bold accent">O Elo que Une Sabedoria</h1>
     <p class="mt-4 text-lg text-muted max-w-xl mx-auto">
       Você nasceu para ser livre. Para viver em paz. Em amor. Na plenitude do seu potencial.
     </p>
@@ -112,53 +96,45 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="max-w-3xl mx-auto mb-20 text-center px-4 sm:px-0">
+  <section class="max-w-3xl mx-auto mb-20 text-center px-4">
     <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-white">
       Você sente que está vivendo o propósito pelo qual veio ao mundo?
     </h2>
-    <p class="text-muted mb-4">
-      Se você é alguém que:
-    </p>
-    <ul class="text-left space-y-2 text-muted list-disc list-inside ml-4 max-w-xl mx-auto">
+    <p class="text-muted mb-4">Se você é alguém que:</p>
+    <ul class="text-left space-y-2 text-muted list-disc list-inside ml-4">
       <li>Sente-se preso(a) por padrões mentais limitantes;</li>
       <li>Está cansado(a) de viver sob máscaras sociais e falsas modéstias;</li>
       <li>Tem dificuldade em reconhecer e manifestar seu verdadeiro poder interior;</li>
       <li>Deseja encontrar significado, liberdade e abundância em todas as áreas da vida;</li>
     </ul>
-    <p class="mt-6 text-lg text-white">
-      Então chegou a hora de se encontrar.
-    </p>
+    <p class="mt-6 text-lg text-white">Então chegou a hora de se encontrar.</p>
   </section>
 
   <!-- Services -->
-  <section class="max-w-4xl mx-auto mb-20 px-4 sm:px-0">
+  <section class="max-w-4xl mx-auto mb-20 px-4">
     <h2 class="text-2xl md:text-3xl font-semibold mb-8 text-center text-white">
       Como posso te ajudar?
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <!-- Card 1 -->
-      <div class="bg-[#14141c] p-6 rounded-lg shadow-lg border border-gray-700 hover:border-yellow-400 transition duration-300">
+      <div class="bg-[#14141c] p-6 rounded-lg border border-gray-700 hover:border-yellow-400 transition">
         <h3 class="text-xl font-semibold mb-3 flex items-center text-white">
           <i class="fas fa-brain accent mr-2"></i> Filosofia prática
         </h3>
         <p class="text-muted">Para questionar, refletir e reconstruir a própria história.</p>
       </div>
-      <!-- Card 2 -->
-      <div class="bg-[#14141c] p-6 rounded-lg shadow-lg border border-gray-700 hover:border-yellow-400 transition duration-300">
+      <div class="bg-[#14141c] p-6 rounded-lg border border-gray-700 hover:border-yellow-400 transition">
         <h3 class="text-xl font-semibold mb-3 flex items-center text-white">
           <i class="fas fa-heartbeat accent mr-2"></i> Terapias holísticas
         </h3>
         <p class="text-muted">Para equilibrar corpo, mente e espírito.</p>
       </div>
-      <!-- Card 3 -->
-      <div class="bg-[#14141c] p-6 rounded-lg shadow-lg border border-gray-700 hover:border-yellow-400 transition duration-300">
+      <div class="bg-[#14141c] p-6 rounded-lg border border-gray-700 hover:border-yellow-400 transition">
         <h3 class="text-xl font-semibold mb-3 flex items-center text-white">
           <i class="fas fa-microchip accent mr-2"></i> Tecnologia consciente
         </h3>
         <p class="text-muted">Para acelerar o autoconhecimento e a transformação pessoal.</p>
       </div>
-      <!-- Card 4 -->
-      <div class="bg-[#14141c] p-6 rounded-lg shadow-lg border border-gray-700 hover:border-yellow-400 transition duration-300">
+      <div class="bg-[#14141c] p-6 rounded-lg border border-gray-700 hover:border-yellow-400 transition">
         <h3 class="text-xl font-semibold mb-3 flex items-center text-white">
           <i class="fas fa-user-friends accent mr-2"></i> Para quem é a minha consultoria?
         </h3>
@@ -173,22 +149,15 @@
 
   <!-- Call to Action -->
   <section class="mb-20 text-center">
-    <div class="max-w-3xl mx-auto px-4 sm:px-0">
-      <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-white">
-        Pronto(a) para começar?
-      </h2>
-      <p class="text-muted mb-8">
-        Conecte-se consigo mesmo(a). E encontre o seu propósito.
-      </p>
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-white">Pronto(a) para começar?</h2>
+      <p class="text-muted mb-8">Conecte-se consigo mesmo(a). E encontre o seu propósito.</p>
       <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="https://wa.me/55149981395176" 
-           target="_blank"
-           rel="noopener noreferrer"
-           class="btn-main mx-auto sm:mx-0">
+        <a href="https://wa.me/55149981395176" target="_blank" rel="noopener noreferrer" class="btn-main">
           <i class="fab fa-whatsapp"></i> Agendar Sessão Gratuita
         </a>
-        <form action="https://mailchi.mp/YOUR_MAILCHIMP_LINK"  method="post" target="_blank">
-          <button type="submit" class="btn-outline mx-auto sm:mx-0">
+        <form action="https://mailchi.mp/YOUR_MAILCHIMP_LINK" method="post" target="_blank">
+          <button type="submit" class="btn-outline">
             <i class="far fa-envelope"></i> Assinar Newsletter
           </button>
         </form>
@@ -198,49 +167,16 @@
 
   <!-- Social Media -->
   <section class="mb-20 text-center">
-    <div class="max-w-3xl mx-auto px-4 sm:px-0">
+    <div class="max-w-3xl mx-auto px-4">
       <h2 class="text-2xl md:text-3xl font-semibold mb-8 text-white">Siga-nos</h2>
       <div class="flex flex-wrap justify-center gap-4">
-        <a href="https://www.instagram.com/pleiadianstecandhuman"  target="_blank" rel="noopener noreferrer"
-           class="flex items-center gap-2 btn-instagram px-5 py-3 rounded-lg transition">
+        <a href="https://www.instagram.com/pleiadianstecandhuman" target="_blank" rel="noopener noreferrer" class="btn-social btn-instagram">
           <i class="fab fa-instagram"></i> Instagram
         </a>
-        <a href="https://www.youtube.com/@fragmentosdesofia"  target="_blank" rel="noopener noreferrer"
-           class="flex items-center gap-2 btn-youtube px-5 py-3 rounded-lg transition">
-          <i class="fab fa-youtube"></i> YouTube
-        </a>
-        <a href="https://www.reddit.com/r/fragmentosdesofia"  target="_blank" rel="noopener noreferrer"
-           class="flex items-center gap-2 btn-reddit px-5 py-3 rounded-lg transition">
-          <i class="fab fa-reddit-alien"></i> Reddit
-        </a>
-        <a href="https://x.com/elosdesofia"  target="_blank" rel="noopener noreferrer"
-           class="flex items-center gap-2 btn-x px-5 py-3 rounded-lg transition">
-          <i class="fab fa-x-twitter"></i> X.com
-        </a>
-        <a href="https://www.threads.net/@elosdesofia"  target="_blank" rel="noopener noreferrer"
-           class="flex items-center gap-2 btn-threads px-5 py-3 rounded-lg transition">
-          <i class="fa-brands fa-threads"></i> Threads
-        </a>
+        <!-- Outras redes sociais podem ser adicionadas aqui -->
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="text-center py-8 px-6 text-sm text-muted">
-    <p>
-      <i class="fas fa-envelope mr-2"></i>
-      <a href="mailto:sofiarebeca11@hotmail.com" class="hover:text-yellow-400 transition">sofiarebeca11@hotmail.com</a>
-    </p>
-    <p class="mt-2">
-      <i class="fab fa-whatsapp mr-2"></i>
-      <a href="https://wa.me/55149981395176"  class="hover:text-yellow-400 transition">(14) 9.98139-5176</a>
-    </p>
-    <p class="mt-6">&copy; <span id="year"></span> Pleiadians. Todos os direitos reservados.</p>
-  </footer>
-
-  <!-- Script para ano dinâmico no rodapé -->
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
